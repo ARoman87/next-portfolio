@@ -15,7 +15,7 @@ export default function ThemeToggle() {
   return (
     isClient && (
       <button
-        className="flex h-8 w-14 items-center rounded-full bg-white shadow transition duration-300 focus:outline-none dark:bg-gray-500"
+        className="flex h-8 w-14 items-center rounded-full bg-[#FAE9B1] shadow transition duration-300 focus:outline-none dark:bg-gray-600"
         onClick={() => {
           if (theme === "dark") {
             setTheme("light");
@@ -37,7 +37,7 @@ export default function ThemeToggle() {
             damping: 30
           }}
         >
-          {theme === "dark" ? <IoMoonOutline size={18} /> : <IoSunnyOutline size={20} />}
+          {theme === "dark" ? <IoMoonOutline size={18} /> : <IoSunnyOutline size={20} className="text-orange-600" />}
         </motion.div>
       </button>
     )
