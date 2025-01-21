@@ -4,7 +4,9 @@ import React, { JSX, useEffect, useRef, useState } from "react";
 import { FaCode } from "react-icons/fa6";
 
 interface TimelineEntry {
-  title: string;
+  company: string;
+  dates: string;
+  jobTitle: string;
   content: React.ReactNode;
   icon: JSX.Element;
 }
@@ -61,21 +63,25 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
         </div>
 
         {data.map((item, index) => (
-          <div key={index} className="mx-4 flex flex-col justify-start pt-10 md:mx-0 md:flex-row md:gap-10">
+          <div key={index} className="mx-4 flex flex-col justify-start pt-10 md:mx-0 md:flex-row md:gap-4">
             <div className="sticky top-40 z-40 flex flex-col items-center self-start md:w-full md:flex-row">
-              <div className="dark:bg-background absolute left-3 hidden h-10 w-10 items-center justify-center rounded-full bg-white md:left-3 md:flex">
+              <div className="absolute left-3 hidden h-10 w-10 items-center justify-center rounded-full bg-white dark:bg-background md:left-3 md:flex">
                 <div className="h-4 w-4 rounded-full border border-neutral-300 bg-neutral-200 p-2 dark:border-neutral-700 dark:bg-neutral-800" />
               </div>
-              <h3 className="hidden bg-gradient-to-r from-white to-[#767676] bg-clip-text py-2 text-xl font-bold text-transparent md:block md:pl-20 md:text-5xl">
-                {item.title}
-              </h3>
+              <div className="md:pl-20">
+                <h3 className="hidden bg-gradient-to-r from-white to-[#767676] bg-clip-text py-2 text-xl font-bold text-transparent md:block md:text-5xl">
+                  {item.dates}
+                </h3>
+                <h4 className="text-2xl font-semibold">{item.company}</h4>
+                <h4 className="">{item.jobTitle}</h4>
+              </div>
             </div>
 
             <div className="relative min-h-[400px] w-full md:pl-4 md:pr-4">
               <h3 className="mb-4 block w-full bg-gradient-to-r from-white to-[#767676] bg-clip-text py-2 text-left text-2xl font-bold text-transparent md:hidden">
-                {item.title}
+                {item.company}
               </h3>
-              <div className="rounded-xl bg-[#161616] p-4">{item.content}</div>
+              <div className="p-4">{item.content}</div>
             </div>
           </div>
         ))}
