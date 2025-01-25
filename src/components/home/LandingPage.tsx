@@ -3,8 +3,13 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 
 import { Container } from "../ui/container";
+import Connect from "./Connect";
 import DarkMode from "./DarkMode";
+import ExperienceCard from "./ExperienceCard";
+import LocationCard from "./LocationCard";
 import Me from "./Me";
+import ProjectsCard from "./ProjectsCard";
+import RobotAnimation from "./RobotAnimation";
 import Skills from "./Skills";
 import SplashScreen from "./SplashScreen";
 
@@ -27,7 +32,14 @@ export default function LandingPage() {
           <Container>
             <div className="space-y-4 pt-20">
               <Me />
+              <LocationCard />
               <DarkMode />
+
+              <RobotAnimation />
+
+              <Connect />
+              <ExperienceCard />
+              <ProjectsCard />
               <Skills />
             </div>
           </Container>

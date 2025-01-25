@@ -1,8 +1,9 @@
 import { Card } from "@/components/ui/card";
 import { LinkIcon } from "lucide-react";
 import Link from "next/link";
+import { FaEnvelope } from "react-icons/fa6";
 import { IconType } from "react-icons/lib";
-import { SiFacebook, SiGithub, SiInstagram, SiX, SiYoutube } from "react-icons/si";
+import { SiGithub, SiLinkedin } from "react-icons/si";
 
 type SocialLinks = Array<{
   href: string;
@@ -19,27 +20,17 @@ export default function Connect() {
     },
     {
       href: "/",
-      title: "Facebook",
-      icon: SiFacebook
+      title: "Email",
+      icon: FaEnvelope
     },
     {
       href: "/",
-      title: "Instagram",
-      icon: SiInstagram
-    },
-    {
-      href: "/",
-      title: "X",
-      icon: SiX
-    },
-    {
-      href: "/",
-      title: "YouTube",
-      icon: SiYoutube
+      title: "LinkedIn",
+      icon: SiLinkedin
     }
   ];
   return (
-    <Card className="w-[400px]">
+    <Card className="md:w-[400px]">
       <div className="flex flex-col gap-6 rounded-xl p-4 lg:p-6">
         <div className="flex items-center gap-2">
           <LinkIcon className="size-[18px]" />
