@@ -30,8 +30,8 @@ export default function Connect() {
     }
   ];
   return (
-    <Card className="md:w-[400px]">
-      <div className="flex flex-col gap-6 rounded-xl p-4 lg:p-6">
+    <Card className="w-full lg:w-[400px]">
+      <div className="flex flex-col gap-6 rounded-xl p-4">
         <div className="flex items-center gap-2">
           <LinkIcon className="size-[18px]" />
           <h2 className="text-sm">Connect</h2>
