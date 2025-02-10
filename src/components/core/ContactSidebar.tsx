@@ -6,7 +6,7 @@ export default function ContactSidebar() {
         <a href="https://github.com/ARoman87" target="_blank">
           <FaGithub />
         </a>
-        <a href="mailto: angel.l.roman@hotmail.com" target="_blank">
+        <a href="mailto: angel427roman@gmail.com" target="_blank">
           <FaEnvelope />
         </a>
         <a href="https://www.linkedin.com/in/aroman87/" target="_blank">

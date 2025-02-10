@@ -14,17 +14,17 @@ type SocialLinks = Array<{
 export default function Connect() {
   const SOCIAL_LINKS: SocialLinks = [
     {
-      href: "/",
+      href: "https://github.com/ARoman87",
       title: "GitHub",
       icon: SiGithub
     },
     {
-      href: "/",
+      href: "mailto: angel427roman@gmail.com",
       title: "Email",
       icon: FaEnvelope
     },
     {
-      href: "/",
+      href: "https://www.linkedin.com/in/aroman87/",
       title: "LinkedIn",
       icon: SiLinkedin
     }
@@ -47,6 +47,7 @@ export default function Connect() {
                 key={index}
                 href={href}
                 className="text-muted-foreground hover:text-foreground flex w-fit items-center gap-3 transition-colors"
+                target="_blank"
               >
                 <Icon className="size-[18px]" />
                 <h3>{title}</h3>
