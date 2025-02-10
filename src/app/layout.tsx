@@ -34,7 +34,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${oswald.variable} antialiased dark:bg-black`}>
         <Analytics />
         <SpeedInsights />
-        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange defaultTheme="light">
+        <ThemeProvider attribute="class" enableSystem disableTransitionOnChange defaultTheme="dark">
           <Navbar />
           {children}
           <ContactSidebar />
