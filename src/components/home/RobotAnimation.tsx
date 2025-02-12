@@ -4,7 +4,7 @@ import { Card } from "../ui/card";
 
 export default function RobotAnimation() {
   return (
-    <Card className="relative h-[450px] w-full md:w-[400px]">
+    <Card className="relative min-h-[450px] w-full xl:w-[400px]">
       <div className="flex items-center gap-2 p-4">
         <BsBadge3D className="size-[18px]" />
         <h2 className="text-sm">Made with Spline3D</h2>

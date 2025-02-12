@@ -1,17 +1,13 @@
+import { Card } from "../ui/card";
 import { Container } from "../ui/container";
-import RobotAnimation from "./RobotAnimation";
 
 export default function Hero() {
   return (
-    <div className="h-screen py-20">
+    <div className="py-20">
       <Container>
-        <div>
-          <div>
-            <h1>Hey There,</h1>
-            <h2>I`m Angel</h2>
-          </div>
-        </div>
-        <RobotAnimation />
+        <Card className="flex h-[800px] w-full items-end justify-center">
+          <h1 className="max-w-[1800px] font-oswald text-[20vw] 2xl:text-[20rem]">Angel Roman</h1>
+        </Card>
       </Container>
     </div>
   );

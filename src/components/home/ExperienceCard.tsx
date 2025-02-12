@@ -1,5 +1,13 @@
-import { Card } from "../ui/card";
+import { BentoCard } from "../ui/bento-card";
 
 export default function ExperienceCard() {
-  return <Card className="flex h-[200px] w-full flex-1 items-center justify-center lg:min-w-[200px]">Experience</Card>;
+  const data = {
+    name: "Experience",
+    description: "A diverse professional journey spanning military service, various industries, and software engineering expertise.",
+    className: "",
+    href: "/experience",
+    cta: "View All Experience",
+    background: <div>Experience</div>
+  };
+  return <BentoCard {...data} className="min-h-[400px] lg:w-1/2" />;
 }

@@ -1,6 +1,7 @@
 "use client";
 import { useTheme } from "next-themes";
 import Image from "next/image";
+import Link from "next/link";
 import { Container } from "../ui/container";
 import ThemeToggle from "../ui/theme-toggle";
 
@@ -12,10 +13,10 @@ export default function Navbar() {
       <div className="pointer-events-auto w-full">
         <Container>
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+            <Link href={"/"} className="flex items-center space-x-2">
               <Image src={theme === "light" ? "/images/ARLogo-black.png" : "/images/ARLogo-white.png"} alt="Logo" width={50} height={50} />
-              <p className="font-oswald text-xl font-semibold">Angel Roman</p>
-            </div>
+              <p className="font-oswald text-xl uppercase">Angel Roman</p>
+            </Link>
             <ThemeToggle />
           </div>
         </Container>
