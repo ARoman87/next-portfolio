@@ -39,17 +39,8 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
       <div className="mx-4 flex flex-col items-center">
         <h1 className="mb-6 flex items-center gap-2 text-2xl text-blue-500">
           <FaCode />
-          Services
+          Experience
         </h1>
-        <h2 className="mb-10 text-center text-xl md:text-4xl">
-          <span className="bg-gradient-to-r from-white to-[#767676] bg-clip-text text-transparent">
-            We handle everything from design to{" "}
-          </span>
-          <br className="hidden md:block" />
-          <span className="bg-gradient-to-r from-white to-[#767676] bg-clip-text text-transparent">
-            deployment to get your website shipped and ready to go!
-          </span>
-        </h2>
       </div>
 
       <div ref={containerRef} className="relative mx-auto max-w-7xl pb-20">
